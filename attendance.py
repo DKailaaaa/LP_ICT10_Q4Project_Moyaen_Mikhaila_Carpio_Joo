@@ -30,7 +30,6 @@ def plot():
 
     fig, ax = plt.subplots(figsize=(7,4))
 
-    # ✅ THIS is the ONLY white background (graph itself)
     ax.set_facecolor("white")
 
     ax.plot(x, y, marker="o")
@@ -48,5 +47,5 @@ def plot():
 
     display(fig, target="plot-area", append=False)
 
-# make callable from HTML
+
 window.plot = plot
