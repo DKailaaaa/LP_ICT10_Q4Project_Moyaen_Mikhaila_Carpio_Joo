@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Ruby Gallery</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: #f9eae1;
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #7d4f50;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            background-color: #aa998f;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.85;
+        }
+
+      
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 2rem 2rem;
+        }
+
+        h1 {
+            color: #4A4A4A;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-image {
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #7d4f50;
+        }
+
+        .gallery-name {
+            color: #4A4A4A;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-caption {
+            color: #7d4f50;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav class="navbar">
+    <div class="nav-title">School System</div>
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn">Classmates</a>
+        <a href="attendancetracker.html" class="nav-btn">Attendance Tracker</a>
+        <a href="gallery.html" class="nav-btn">Gallery</a>
+    </div>
+</nav>
+
+
+    <main class="container">
+        <h1>10 Ruby Gallery</h1>
+        <p class="subtitle">One whole year that is full of chaos</p>
+        
+        <div class="gallery-grid">
+           
+            <div class="gallery-card">
+                <img src="nathan.jpg" alt="Nathan" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Nathan'">
+                <div class="gallery-name">Nathan</div>
+                <div class="gallery-caption">Class Picture Taking</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="thea.jpg" alt="Thea" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Thea'">
+                <div class="gallery-name">Thea</div>
+                <div class="gallery-caption">Dance Club Performances</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="anika.jpg" alt="Maiah" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Maiah'">
+                <div class="gallery-name">Maiah</div>
+                <div class="gallery-caption">Poetry & Public Speaking Festival</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="anxela.jpg" alt="Anxela" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Anxela'">
+                <div class="gallery-name">Anxela</div>
+                <div class="gallery-caption">Christmas Party</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="gab.jpg" alt="Gab" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Gabbie'">
+                <div class="gallery-name">Gabbie</div>
+                <div class="gallery-caption">Christmas Party</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="joo.jpg" alt="Joo" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Joo'">
+                <div class="gallery-name">Joo</div>
+                <div class="gallery-caption">Hanging out with friends</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="caiomey.jpg" alt="Caiomey" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Caiomey'">
+                <div class="gallery-name">Caiomey</div>
+                <div class="gallery-caption">Halloween Party</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="katelyn.jpg" alt="Athena" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Athena'">
+                <div class="gallery-name">Athena</div>
+                <div class="gallery-caption">Camping</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="nikolo.jpg" alt="Nikolo" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Nikolo'">
+                <div class="gallery-name">Nikolo</div>
+                <div class="gallery-caption">CAT Graduation</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="chelsea.jpg" alt="Chelsea" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Chelsea'">
+                <div class="gallery-name">Chelsea</div>
+                <div class="gallery-caption">Teachers Day</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="jercey.jpg" alt="Jercey" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Jercey'">
+                <div class="gallery-name">Jercey</div>
+                <div class="gallery-caption">Coding</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="sittie.jpg" alt="Sittie" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Sittie'">
+                <div class="gallery-name">Sittie</div>
+                <div class="gallery-caption">Teachers Day</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="jarett.jpg" alt="Jarett" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Jarett'">
+                <div class="gallery-name">Jarett</div>
+                <div class="gallery-caption">Giving a nice smile</div>
+            </div>
+            
+           
+             <div class="gallery-card">
+                <img src="jaykob.jpg" alt="jbe" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Nikolo'">
+                <div class="gallery-name">JBE</div>
+                <div class="gallery-caption">Intramurals Volleyball</div>
+             </div>
+            
+            <div class="gallery-card">
+                <img src="chloe.jpg" alt="Chloe" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Chloe'">
+                <div class="gallery-name">Chloe</div>
+                <div class="gallery-caption">Intramurals</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="uriel.jpg" alt="Uriel" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Urielle'">
+                <div class="gallery-name">Urielle</div>
+                <div class="gallery-caption">Going to House of Somang</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="aaron.jpg" alt="Aaron" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Aaron'">
+                <div class="gallery-name">Aaron</div>
+                <div class="gallery-caption">Sleeping on the floor</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="gelo.jpg" alt="Gelo" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Gelo'">
+                <div class="gallery-name">Gelo</div>
+                <div class="gallery-caption">Hanging out with friends</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="ezra.jpg" alt="Ezra" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Ezra'">
+                <div class="gallery-name">Ezra</div>
+                <div class="gallery-caption">Halloween Party</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="jakobl.jpg" alt="Jakob" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=JBL'">
+                <div class="gallery-name">JBL</div>
+                <div class="gallery-caption">Volleyball Match</div>
+            </div>
+            
+         
+            <div class="gallery-card">
+                <img src="anika.jpg" alt="Anika" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Anika'">
+                <div class="gallery-name">Anika</div>
+                <div class="gallery-caption">Poetry & Public Speaking Festival</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="kaila.jpg" alt="Kaila" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Kaila'">
+                <div class="gallery-name">Kaila</div>
+                <div class="gallery-caption">Sabayang Pagbikas</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="xander.jpg" alt="Xander" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Xander'">
+                <div class="gallery-name">Xander</div>
+                <div class="gallery-caption">Getting caught in the worse sleeping position</div>
+            </div>
+            
+          
+            <div class="gallery-card">
+                <img src="sam.jpg" alt="Sam" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Sam'">
+                <div class="gallery-name">Sam</div>
+                <div class="gallery-caption">Hanging out with friends</div>
+            </div>
+            
+            
+            <div class="gallery-card">
+                <img src="pio.jpg" alt="Pio" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Pio'">
+                <div class="gallery-name">Pio</div>
+                <div class="gallery-caption">Physical Education Classes</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="katelyn.jpg" alt="Sannino" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Katelyn'">
+                <div class="gallery-name">Katelyn</div>
+                <div class="gallery-caption">Camping</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="andrei.jpg" alt="Andrei" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF6B6B/FFFFFF?text=Andrei'">
+                <div class="gallery-name">Andrei</div>
+                <div class="gallery-caption">CAT Graduation</div>
+            </div>
+            
+           
+            <div class="gallery-card">
+                <img src="hans.jpg" alt="Ulit" class="gallery-image" onerror="this.src='https://via.placeholder.com/150x100/FF8E8E/FFFFFF?text=Hans'">
+                <div class="gallery-name">Hans</div>
+                <div class="gallery-caption">Camping</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
